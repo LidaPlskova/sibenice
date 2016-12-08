@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "5.2.4.0.321" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"title": "Moje nová aplikace"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "thisKeyPressed", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labPismeno1"
+				"text": "*"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 95
+				"y": 85
+				"height": 25
+				"width": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labPismeno2"
+				"text": "*"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 28
+				"height": 25
+				"x": 125
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labPismeno3"
+				"text": "*"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 28
+				"height": 25
+				"x": 155
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labPismeno4"
+				"text": "*"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 28
+				"height": 25
+				"x": 185
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labUhodni"
+				"text": "Uhodni slovo"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 100
+				"y": 30
+				"width": 105
+				"height": 50
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 285, 200 )
+		} )
+	}
+}
